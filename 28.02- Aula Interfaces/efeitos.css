@@ -1,0 +1,125 @@
+.moldura_texto{
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-text-fill-color: green;
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 3px;
+}
+
+#box{
+    width: 500px;
+    height: 400px;
+    border: 1px solid;
+    background-color: #DF9;
+    border-radius: 20px;
+    box-shadow: -10px -10px 20px #090;
+    padding: 10px;
+}
+
+.sombra_texto{
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 5px 5px 10px #0FF;
+}
+
+.colunas{
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 12px;
+    -webkit-column-count: 3; /* numero de colunas */
+    -webkit-column-gap: 1em; /* espaçamento entre as colunas */
+    -webkit-column-rule: 1px solid #888; /* linha vertical entre as colunas */
+}
+
+#box2{
+    width: 600px;
+    height: 500px;
+    border: 10px solid;
+    background-image: url(imagens/baixados.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#transparente{
+width: 400px;
+height: 300px;
+padding: 20px;
+background-color: rgba(0, 155, 0, 0.7);
+}
+
+#gradiente{
+    width: 400px;
+    height: 200px;
+    background: -webkit-gradient(linear, left top, right top, from(#ffCCCC), to(#ff0000));
+    margin: 20px;
+}
+
+#gradiente1{
+    width: 400px;
+    height: 200px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffCCCC), to(#00FF00));
+    margin: 20px;
+}
+
+#gradiente2{
+    width: 400px;
+    height: 200px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#ffCCCC), to(#0000FF));
+    margin: 20px;
+}
+
+#gradiente3{
+    width: 400px;
+    height: 200px;
+    background: -webkit-gradient(radial, 50% 50%, 20, 50% 50%, 90, from(#fff), to(#666));
+    margin: 20px;
+}
+
+#gradiente4{
+    width: 400px;
+    height: 200px;
+    background: -webkit-gradient(radial, 50% 50%, 20, 50% 50%, 90, from(#fff), to(green));
+    margin: 20px;
+}
+
+@-webkit-keyframes pulsar{
+    from{
+        opacity: 0.0; /* Transparência */
+        font-size: 100%;
+    }
+
+    to{
+    opacity: 1.0;
+    font-size: 200%;
+    }
+}
+
+#animacao{
+    -webkit-animation-name: pulsar;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    font-family: tahoma;
+    font-weight: bold;
+    font-size: 12px;
+    color: #00F;
+    text-align: center;
+}
+
+section div{
+    width: 300px;
+    height: 300px;
+    float: left;
+    border: solid 1px #333;
+}
+
+section div img {
+    width: 80%;
+    border: solid 1px #333;
+    padding: 10px;
+}
