@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- Essa tag indicar doc do HTML5 -->
+<html lang="pt-br"> <!-- Determina o início da pgm da página -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Trabalha o idioma local -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajuda na visualização do responsivo -->
+    <title>Minha primeira página usando HTML</title>
+
+    <style>
+        body {
+            background-color: aquamarine;
+            /* Cor de fundo */
+            color: darkgreen;
+            /* Cor da fonte */
+            font-size: 20px;
+            /* px, pt, pc, %, cm, mm, em */
+            font-family: verdana;
+            /* Tipo da fonte */
+            background-image: url(imagens/sep6.png);
+            /* Imagem de fundo */
+            background-repeat: no-repeat;
+            /* Sem repatição */
+            /* background-position: 50% 50%; */
+            background-size: cover;
+            /* Preenche o fundo com a imagem */
+            background-attachment: fixed;
+            /* Fixa a imagem no fundo da página */
+        }
+
+        h1 {
+            color: navy;
+            text-decoration: underline;
+            /* Sublinhado */
+            text-align: center;
+            /* Alinhamento ao centro */
+            font-size: 12px;
+            font-style: italic;
+            /* Estilo da fonte */
+        }
+
+        h3 {
+            background-color: black;
+            color: yellow;
+            text-align: center;
+            width: 600px;
+            font-size: 30px;
+            font-weight: normal;
+            /* Retirar o negrito */
+        }
+
+        .diferente {
+            background-color: yellow;
+            color: black;
+        }
+
+        .mudança {
+            width: 300px;
+            height: 250px;
+        }
+
+        .mudança2 {
+            width: 400px;
+            height: 250px;
+        }
+
+        .mudança3 {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+
+</head>
+
+<body> <!-- Corpo da página, onde se encontra o conteúdo da página -->
+
+    <p>um texto qualquer no corpo da página </p>
+
+    <h1>Título da página </h1>
+    <p> Texto da página</p>
+
+    <hr /> <!-- Exibe uma linha, é tag vázia, não fecha no final -->
+
+    <h2>Testando a tag H2 </h2>
+
+    <h3>Testando a tag H3 </h3>
+    <h3 class="diferente">Testando a tag H3 </h3>
+    <h3>Testando a tag H3 </h3>
+
+    <h4>Testando a tag H4 </h4>
+    <h5>Testando a tag H5 </h5>
+    <h6>Testando a tag H6 </h6>
+
+    <hr />
+
+    <img class="mudança" src="imagens/sep2.jpeg" />
+    <img src="imagens/sep3.jpeg" class="mudança2" />
+    <img class="mudança3" src="imagens/sep4.jpeg" />
+
+</body>
+
+</html> <!-- Determina o final da pgm da página -->
